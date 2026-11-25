@@ -75,4 +75,15 @@ In this lab, we ran MongoDB and RabbitMQ ourselves, as StatefulSet pods in AKS. 
 
 ---
 
+## Challenges
+
+- **vCPU quota:** My Azure for Students subscription only allowed 4 vCPUs for the D2as_v4 size. So I used `Standard_B2als_v2` for the `workerspool` node.
+- **Public IP limit:** My subscription allows only 3 public IPs per region. `store-admin` stayed `<pending>` until I deleted my build VM's public IP.
+
+---
+
+## References
+
+1. [Azure Cosmos DB for MongoDB overview (Microsoft Learn)](https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/overview)
+2. [What is Azure Service Bus? (Microsoft Learn)](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview)
 
